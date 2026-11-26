@@ -19,13 +19,14 @@
     --gutter: 1.5rem;
     --space: 0.75rem;
 
-    --header-color: #cccccc;
-    --navbar-color: #e6e6e6;
-    --extra-color: #e6e6e6;
-    --main-color: #ffffff;
+    --header-color: #101418;
+    --navbar-color: #101418;
+    --extra-color: #101418;
+    --main-color: #202122;
+    --footer-color: #101418;
 
-    --text-color: #000000;
-    --link-color: #0b76cb;
+    --text-color: #ffffff;
+    --link-color: #88a3e8;
     --footer-text-color: #cccccc;
 }
 a {
@@ -51,15 +52,15 @@ body {
     display: flex;
     list-style-type: none;
     align-items: center;
-    gap: 1em;
+    gap: 1rem;
     padding: 0px;
     margin: 0px;
 }
 .logo {
     display: block;
     margin: 0px;
-    width: 2em;
-    height: 2em;
+    width: 2rem;
+    height: 2rem;
 }
 .title {
     color: var(--text-color);
@@ -70,7 +71,7 @@ body {
     display: flex;
     list-style-type: none;
     align-items: center;
-    gap: 1em;
+    gap: 1rem;
     padding: 0px;
     margin: 0px;
 }
@@ -93,7 +94,7 @@ body {
 }
 .navbar_sublist {
     list-style-type: none;
-    padding-left: 1em;
+    padding-left: 1rem;
     margin: 0.5em 0;
 }
 .main {
@@ -111,12 +112,13 @@ body {
     max-width: 100%;
 }
 .footer {
+    background-color: var(--footer-color);
     padding: var(--space) var(--gutter);
     margin: 0px;
 }
 .footer_list {
     display: flex;
-    gap: 0.4em;
+    gap: 1rem;
     list-style-type: none;
     padding: 0px;
     margin: 0px;

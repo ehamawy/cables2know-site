@@ -4,9 +4,9 @@
   <defs>
     <style>
       .st0 {
-        fill: red;
+        fill: #202122;
       }
     </style>
   </defs>
-  <rect class="st0" x="0" y="0" width="1920" height="1080"/>
+  <rect class="st0" width="1920" height="1080"/>
 </svg>
