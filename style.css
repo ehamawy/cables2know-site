@@ -10,6 +10,9 @@
     font-weight: 100 900;
     font-style: italic;
 }
+a {
+  text-decoration: none;
+}
 body {
     margin: 0px;
     font-family: "Roboto", sans-serif;
@@ -83,4 +86,19 @@ body {
 .extra {
     width: 30%;
     background-color: #e6e6e6;
+}
+.footer {
+    padding: 0px;
+    margin: 0px;
+}
+.footer_list {
+    display: flex;
+    gap: 0.4em;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+footer a {
+    color: #cccccc;
+    font-size: 10pt;
 }
