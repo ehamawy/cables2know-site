@@ -11,3 +11,5 @@ It is a website to teach readers about various kinds of cables and chargers, wha
 ## License
 
 This project is licensed under GNU GPLv3. See `./LICENSE.txt` for more info.
+
+Roboto font is licensed under SIL OFLv1.1. See `./fonts/LICENSE.txt` for more info.
