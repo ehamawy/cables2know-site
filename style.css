@@ -13,6 +13,9 @@
 body {
     margin: 0px;
     font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 .header {
     background-color: #cccccc;
@@ -52,10 +55,12 @@ body {
 .header_link {
     color: black;
 }
+.threecolumnlayout {
+    flex: 1;
+    display: flex;
+}
 .navbar {
     width: 20%;
-    float: left;
-    height: 30em;
     background-color: #e6e6e6;
 }
 .navbar_list {
@@ -74,11 +79,8 @@ body {
 }
 .main {
     width: 50%;
-    float: left;
 }
 .extra {
     width: 30%;
-    float: left;
-    height: 30em;
     background-color: #e6e6e6;
 }
