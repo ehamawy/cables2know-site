@@ -127,3 +127,6 @@ h2 {
     margin-top: var(--gutter);
     margin-bottom: var(--space);
 }
+.navbar_list a{
+    color: #000000;
+}
