@@ -10,6 +10,14 @@
     font-weight: 100 900;
     font-style: italic;
 }
+/* fixes weird spacing, found online */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+:root {
+    --gutter: 1.5rem;
+    --space: 0.75rem;
+}
 a {
   text-decoration: none;
 }
