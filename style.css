@@ -61,8 +61,16 @@ body {
 .navbar_list {
     list-style-type: none;
     gap: 1em;
-    padding: 0px;
+    padding-left: 2em;
+    padding-top: 2em;
+    padding-right: 1em;
+    padding-bottom: 1em;
     margin: 0px;
+}
+.navbar_sublist {
+    list-style-type: none;
+    padding-left: 1em;
+    margin: 0.5em 0;
 }
 .main {
     width: 50%;
