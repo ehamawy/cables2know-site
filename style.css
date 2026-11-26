@@ -16,8 +16,10 @@
 }
 /* VARIABLES */
 :root {
-    --gutter: 1.5rem;
+    --tiny-space: 0.25rem;
+    --small-space: 0.5rem;
     --space: 0.75rem;
+    --gutter: 1.5rem;
 
     --header-color: #101418;
     --navbar-color: #101418;
@@ -36,6 +38,7 @@ body {
     margin: 0px;
     font-family: "Roboto", sans-serif;
     color: var(--text-color);
+    line-height: 1.5;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -52,7 +55,7 @@ body {
     display: flex;
     list-style-type: none;
     align-items: center;
-    gap: 1rem;
+    gap: var(--space);
     padding: 0px;
     margin: 0px;
 }
@@ -71,7 +74,7 @@ body {
     display: flex;
     list-style-type: none;
     align-items: center;
-    gap: 1rem;
+    gap: var(--gutter);
     padding: 0px;
     margin: 0px;
 }
@@ -91,16 +94,39 @@ body {
     list-style-type: none;
     padding: 0px;
     margin: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gutter);
+}
+/* main sectionz linkz */
+.navbar_list > li > a {
+    font-weight: bold;
 }
 .navbar_sublist {
     list-style-type: none;
-    padding-left: 1rem;
-    margin: 0.5em 0;
+    padding-left: var(--space);
+    margin: var(--small-space) 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--tiny-space);
+    border-left: 1px solid #333333;
+}
+.navbar_list a {
+    color: var(--text-color);
+    display: block;
+    padding: var(--tiny-space) var(--small-space);
+    border-radius: 4px;
+}
+.navbar_list a:hover {
+    background-color: var(--main-color);
 }
 .main {
     padding: var(--gutter);
     width: 50%;
     background-color: var(--main-color);
+}
+.main p {
+    max-width: 65ch;
 }
 .extra {
     padding: var(--gutter);
@@ -110,6 +136,10 @@ body {
 .extra img {
     display: block;
     max-width: 100%;
+    margin-bottom: var(--small-space);
+}
+.extra h3 {
+    margin-bottom: var(--gutter);
 }
 .footer {
     background-color: var(--footer-color);
@@ -118,7 +148,7 @@ body {
 }
 .footer_list {
     display: flex;
-    gap: 1rem;
+    gap: var(--gutter);
     list-style-type: none;
     padding: 0px;
     margin: 0px;
@@ -139,7 +169,4 @@ h2 {
     margin: 0px;
     margin-top: var(--gutter);
     margin-bottom: var(--space);
-}
-.navbar_list a{
-    color: var(--text-color);
 }
