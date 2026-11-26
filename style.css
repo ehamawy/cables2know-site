@@ -102,3 +102,20 @@ footer a {
     color: #cccccc;
     font-size: 10pt;
 }
+.blue {
+    color: #0b76cb;
+}
+main {
+    padding: 1em;
+}
+h1 {
+    margin: 0px;
+}
+p {
+    margin: 0px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+h2 {
+    font-weight: normal;
+}
