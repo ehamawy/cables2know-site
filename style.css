@@ -14,6 +14,7 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
+/* VARIABLES */
 :root {
     --gutter: 1.5rem;
     --space: 0.75rem;
@@ -33,7 +34,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.8em;
+    padding: var(--space) var(--gutter);
     margin: 0px;
 }
 .header_list {
@@ -71,16 +72,13 @@ body {
     display: flex;
 }
 .navbar {
+    padding: var(--gutter);
     width: 20%;
     background-color: #e6e6e6;
 }
 .navbar_list {
     list-style-type: none;
-    gap: 1em;
-    padding-left: 2em;
-    padding-top: 2em;
-    padding-right: 1em;
-    padding-bottom: 1em;
+    padding: 0px;
     margin: 0px;
 }
 .navbar_sublist {
@@ -89,14 +87,20 @@ body {
     margin: 0.5em 0;
 }
 .main {
+    padding: var(--gutter);
     width: 50%;
 }
 .extra {
+    padding: var(--gutter);
     width: 30%;
     background-color: #e6e6e6;
 }
+.extra img {
+    display: block;
+    max-width: 100%;
+}
 .footer {
-    padding: 0px;
+    padding: var(--space) var(--gutter);
     margin: 0px;
 }
 .footer_list {
@@ -113,17 +117,13 @@ footer a {
 .blue {
     color: #0b76cb;
 }
-main {
-    padding: 1em;
-}
-h1 {
+h1, h3, p {
     margin: 0px;
-}
-p {
-    margin: 0px;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-bottom: var(--space);
 }
 h2 {
     font-weight: normal;
+    margin: 0px;
+    margin-top: var(--gutter);
+    margin-bottom: var(--space);
 }
